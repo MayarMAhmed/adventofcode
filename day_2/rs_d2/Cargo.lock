@@ -3,5 +3,5 @@
 version = 4
 
 [[package]]
-name = "aoc_d2"
+name = "rs_d2"
 version = "0.1.0"
