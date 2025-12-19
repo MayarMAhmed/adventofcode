@@ -1,0 +1,29 @@
+# --- Rust / Cargo ---
+target/
+**/target/
+**/*.rs.bk
+
+
+# --- Rust Analyzer / IDE ---
+.rustc_info.json
+.vscode/
+.idea/
+*.iml
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- OS junk ---
+.DS_Store
+Thumbs.db
+
+# --- Misc temp ---
+tmp/
+*.log
