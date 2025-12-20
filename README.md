@@ -1,6 +1,6 @@
 # Advent of Code 2025 Solutions
 
-Welcome to the **Advent of Code 2025** solutions repository! This repository contains solutions to the programming puzzles from [Advent of Code](https://adventofcode.com/2025), implemented in **Rust** and **Python**.
+Welcome to my solutions for **Advent of Code 2025**! This repository contains solutions to the programming puzzles from [Advent of Code](https://adventofcode.com/2025), implemented in **Rust** and **Python**.
 
 ## Repository Structure
 
