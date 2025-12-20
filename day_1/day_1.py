@@ -1,9 +1,10 @@
 import time
 
 start_time: float=time.time()
-file="input_d1_25.txt"
+import os
 
-
+script_dir = os.path.dirname(os.path.abspath(__file__))
+file = os.path.join(script_dir, "input_d1_25.txt")
 with open(file,encoding="utf-8") as file:
     data=file.readlines()
 

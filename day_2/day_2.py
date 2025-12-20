@@ -1,15 +1,20 @@
 
 import pandas as pd
 import time
+import os
+
+# make the path relative
+script_dir = os.path.dirname(os.path.abspath(__file__))
+file = os.path.join(script_dir, "input_d2_25.txt")
 
 start_time: float=time.time()
-file="input_d2_25.txt"
+
 #file="tmp"
 data=pd.read_csv(file,header=None,sep=",").transpose()
 data[['min','max']]=data[0].str.split("-",expand=True)
 
 #need to find the 
-def find_synynoms(min:int,max:int)->int:
+def find_synonym(min:int,max:int)->int:
     values: Any=0
     for i in range(min,max+1):
         str_i=str(i)
@@ -40,7 +45,7 @@ duplicates=0
 for index,row in data.iterrows():
     min=int(row['min'])
     max=int(row['max'])
-    val=find_synynoms(min,max)
+    val=find_synonym(min,max)
     synynoms+=val
     val2=find_duplicates(min,max)
     duplicates+=val2

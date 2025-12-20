@@ -1,8 +1,10 @@
 from collections import deque
 import time
-
+import os
 start_time: float=time.time()
-file="input_d3_25.txt"
+# make the path relative
+script_dir = os.path.dirname(os.path.abspath(__file__))
+file = os.path.join(script_dir, "input_d3_25.txt")
 #file="tmp.txt"
 
 with open(file,"r",encoding="utf8") as f:
