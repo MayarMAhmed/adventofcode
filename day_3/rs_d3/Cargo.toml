@@ -5,3 +5,11 @@ edition = "2024"
 
 [dependencies]
 enum-display = "0.2.1"
+
+[
+[profile.release]
+lto = true
+strip = "symbols"
+
+[profile.bench]
+lto = true
